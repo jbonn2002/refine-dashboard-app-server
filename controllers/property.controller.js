@@ -84,7 +84,7 @@ const createProperty = async (req, res) => {
       location,
       price,
       photo: photoUrl.url,
-      creator: user._id,
+      creator: User._id,
     });
 
     User.allProperties.push(newProperty._id);
